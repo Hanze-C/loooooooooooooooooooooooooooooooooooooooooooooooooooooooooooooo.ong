@@ -6,7 +6,7 @@ export function stringToBinary(str) {
 			return binary.padStart(16, "0");
 		})
 		.join("")
-		.replaceAll("1", "0")
+		.replaceAll("1", "O")
 		.replaceAll("0", "o");
 }
 
