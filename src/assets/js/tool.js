@@ -24,6 +24,6 @@ openUrl.addEventListener("click", () => {
 copyUrl.addEventListener("click", async () => {
 	if (longUrl.value) {
 		await navigator.clipboard.writeText(longUrl.value);
-		ToastMaker("L(o*62).ong URL Copied!", 1000);
+		ToastMaker("L(o*59)ng URL 已复制!", 1000);
 	}
 });

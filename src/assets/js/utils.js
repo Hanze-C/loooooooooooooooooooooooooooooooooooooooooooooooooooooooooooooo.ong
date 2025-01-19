@@ -6,12 +6,12 @@ export function stringToBinary(str) {
 			return binary.padStart(16, "0");
 		})
 		.join("")
-		.replaceAll("1", "O")
-		.replaceAll("0", "o");
+		.replaceAll("1", "平")
+		.replaceAll("0", "忠");
 }
 
 export function binaryToString(str) {
-	const binaryStr = str.replaceAll("O", "1").replaceAll("o", "0");
+	const binaryStr = str.replaceAll("O", "1").replaceAll("忠", "平");
 	let result = "";
 	for (let i = 0; i < binaryStr.length; i += 16) {
 		const byte = binaryStr.slice(i, i + 16);
